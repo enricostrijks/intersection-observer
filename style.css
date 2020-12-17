@@ -67,3 +67,8 @@ li a {
   background-color: rgb(65, 65, 65);
   width: 100vw;
 }
+
+nav a.actief {
+  transition: 0.5s;
+  border-top: 6px solid royalblue;
+}

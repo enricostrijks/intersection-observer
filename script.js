@@ -1,6 +1,17 @@
 let alleLinks = document.querySelectorAll("nav a");
-let deSecties = doc;
+let deSecties = document.querySelectorAll("section");
 
+const opties = {};
+
+const verwerkDoorsnijding = (entries, observer) => {
+  entries.forEach((entry) => {
+    console.log(entry.target + "doorsnijdt" + entry.isIntersecting);
+  });
+};
+
+let observer = new IntersectionObserver(verwerkDoorsnijding, opties);
+
+observer.observe(deSecties[1]);
 // funtie die ade class actief verwijderd
 const verwijderActief = () => {
   alleLinks.forEach((link) => {
@@ -19,6 +30,6 @@ alleLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
     maakActief(e.target);
-    (window.location = e.target), href;
+    window.location = e.target.href;
   });
 });
