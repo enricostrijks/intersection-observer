@@ -6,27 +6,23 @@
 }
 
 #section1 {
-  height: 600px;
   background-color: rgb(17, 17, 17);
-  height: 100vh;
+  height: 101vh;
 }
 
 #section2 {
-  height: 600px;
   background-color: rgb(36, 36, 36);
-  height: 100vh;
+  height: 101vh;
 }
 
 #section3 {
-  height: 600px;
   background-color: rgb(53, 53, 53);
-  height: 100vh;
+  height: 101vh;
 }
 
 #section4 {
-  height: 600px;
   background-color: rgb(65, 65, 65);
-  height: 100vh;
+  height: 101vh;
 }
 
 ul {
@@ -50,25 +46,30 @@ li a {
 
 .Deel1 {
   background-color: black;
-  width: 100vw;
+  width: 90vw;
 }
 
 .Deel2 {
   background-color: rgb(36, 36, 36);
-  width: 100vw;
+  width: 90vw;
 }
 
 .Deel3 {
   background-color: rgb(53, 53, 53);
-  width: 100vw;
+  width: 90vw;
 }
 
 .Deel4 {
   background-color: rgb(65, 65, 65);
-  width: 100vw;
+  width: 90vw;
 }
 
 nav a.actief {
   transition: 0.5s;
   border-top: 6px solid royalblue;
+}
+
+h2 {
+  padding-top: 100px;
+  padding-left: 50%;
 }
