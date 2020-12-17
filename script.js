@@ -1,7 +1,10 @@
 let alleLinks = document.querySelectorAll("nav a");
 let deSecties = document.querySelectorAll("section");
 
-const opties = {};
+const opties = {
+  rootMargin: "-150px",
+  treshold: 1.0,
+};
 
 const verwerkDoorsnijding = (entries, observer) => {
   entries.forEach((entry) => {
@@ -14,7 +17,9 @@ const verwerkDoorsnijding = (entries, observer) => {
 
 let observer = new IntersectionObserver(verwerkDoorsnijding, opties);
 
-observer.observe(deSecties[1]);
+deSecties.forEach((sectie) => {
+  observer.observe(sectie);
+});
 // funtie die ade class actief verwijderd
 const verwijderActief = () => {
   alleLinks.forEach((link) => {
